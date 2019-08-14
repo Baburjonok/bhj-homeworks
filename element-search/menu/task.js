@@ -19,12 +19,14 @@ for (let i = 0; i < menuLink.length; i++) {
 					subMenu.className = "menu menu_sub";
 				} else {
 				    subMenu.className = subMenu.className + " menu_active";
+					return false;	
 				}
+			
 	        }
 	  
 	    }
 	  
-	    return false;
+	    
 	}
 }
 
