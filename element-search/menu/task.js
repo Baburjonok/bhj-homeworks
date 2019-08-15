@@ -17,6 +17,7 @@ for (let i = 0; i < menuLink.length; i++) {
 				
 				if (subMenu.className.includes('menu_active') === true) {
 					subMenu.className = "menu menu_sub";
+					return false;
 				} else {
 				    subMenu.className = subMenu.className + " menu_active";
 					return false;	
@@ -29,5 +30,3 @@ for (let i = 0; i < menuLink.length; i++) {
 	    
 	}
 }
-
-
