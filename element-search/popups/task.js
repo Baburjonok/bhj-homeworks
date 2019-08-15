@@ -21,6 +21,7 @@ const showSecondWindow = document.getElementById("modal_success");   //Находим в
 
 buttonWindow.onclick = function() {
 	modal_success.className = modal_main.className + " modal_active";   //Делаем второе окно активным при нажатии на кнопку
+	showFirstWindow.className = "modal";
 }
 
 
