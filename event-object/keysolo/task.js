@@ -17,7 +17,40 @@ class Game {
   }
 
   registerEvents() {
-    /*
+	    let symbol = this.currentSymbol;
+	    console.log(symbol.textContent);
+	  	  
+	    function updatePlayer(event) {
+        console.log(event.key);
+
+            if (symbol.textContent === event.key) {
+	            console.log("Совпало!");
+	            this.success();
+            } else {
+	            console.log("Не совпало!");
+	            this.fail();
+            }
+        }
+
+		document.addEventListener('keydown', updatePlayer);
+	  
+	  	  
+	    /*let startWord = document.getElementsByClassName("word");
+        let startWordItem = startWord.item(0);
+        console.log(startWordItem.textContent);
+	  
+	    let userWord = "";
+	    function updatePlayer(event) {
+		    userWord = userWord + event.key;
+            if (startWordItem.textContent == userWord) {
+		        console.log("Победа!");
+			} else {
+				console.log("Проигрыш!");
+			}
+        }
+		
+        document.addEventListener('keydown', updatePlayer);*/
+	/*
       TODO:
       Написать обработчик события, который откликается
       на каждый введённый символ.
